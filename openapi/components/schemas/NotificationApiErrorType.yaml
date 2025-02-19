@@ -1,0 +1,11 @@
+description: |
+  Тип ошибки:
+
+  * `UNKNOWN` — неизвестная ошибка.
+  * `WRONG_EVENT_FORMAT` — неправильный тип уведомления.
+  * `DUPLICATED_EVENT` — дублирующее уведомление.
+type: string
+enum:
+  - UNKNOWN
+  - WRONG_EVENT_FORMAT
+  - DUPLICATED_EVENT

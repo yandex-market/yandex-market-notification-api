@@ -1,0 +1,44 @@
+description: >
+  Уведомление о создании нового заказа (notificationType = ORDER_CREATED).
+
+
+  {% note tip "Чтобы получить подробную информацию о заказе" %}
+
+
+  Используйте метод [GET
+  campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
+
+
+  {% endnote %}
+type: object
+required:
+  - notificationType
+  - orderId
+  - campaignId
+  - items
+  - createdAt
+properties:
+  notificationType:
+    $ref: ./NotificationType.yaml
+  orderId:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64
+  campaignId:
+    description: Идентификатор кампании.
+    type: integer
+    format: int64
+  items:
+    description: Список товаров в заказе.
+    type: array
+    items:
+      $ref: ./NotificationOrderItemDTO.yaml
+  createdAt:
+    description: >
+      Дата и время создания заказа.
+
+
+      Формат даты: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:00:00.213Z`.
+    type: string
+    format: date-time

@@ -1,0 +1,23 @@
+description: Содержимое уведомления с информацией о произошедшем событии.
+type: object
+required:
+  - notificationType
+properties:
+  notificationType:
+    $ref: ./NotificationType.yaml
+oneOf:
+  - $ref: ./PingNotificationDTO.yaml
+  - $ref: ./OrderCreatedNotificationDTO.yaml
+  - $ref: ./OrderStatusUpdatedNotificationDTO.yaml
+  - $ref: ./OrderCancelledNotificationDTO.yaml
+  - $ref: ./OrderCancellationRequestNotificationDTO.yaml
+  - $ref: ./OrderReturnCreatedNotificationDTO.yaml
+discriminator:
+  propertyName: notificationType
+  mapping:
+    PING: ./PingNotificationDTO.yaml
+    ORDER_CREATED: ./OrderCreatedNotificationDTO.yaml
+    ORDER_CANCELLED: ./OrderCancelledNotificationDTO.yaml
+    ORDER_CANCELLATION_REQUEST: ./OrderCancellationRequestNotificationDTO.yaml
+    ORDER_STATUS_UPDATED: ./OrderStatusUpdatedNotificationDTO.yaml
+    ORDER_RETURN_CREATED: ./OrderReturnCreatedNotificationDTO.yaml

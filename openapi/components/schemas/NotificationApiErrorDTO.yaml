@@ -1,0 +1,8 @@
+description: Ошибка при обработке уведомления.
+type: object
+properties:
+  type:
+    $ref: ./NotificationApiErrorType.yaml
+  message:
+    description: Описание ошибки.
+    type: string

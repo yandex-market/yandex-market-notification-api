@@ -1,0 +1,5 @@
+description: Обертка для ошибок при обработке уведомления.
+type: object
+properties:
+  error:
+    $ref: ./NotificationApiErrorDTO.yaml

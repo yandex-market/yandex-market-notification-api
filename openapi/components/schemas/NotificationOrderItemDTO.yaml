@@ -1,0 +1,11 @@
+description: Информация о товаре в заказе.
+type: object
+required:
+  - offerId
+  - count
+properties:
+  offerId:
+    $ref: ./ShopSku.yaml
+  count:
+    description: Количество товара.
+    type: integer

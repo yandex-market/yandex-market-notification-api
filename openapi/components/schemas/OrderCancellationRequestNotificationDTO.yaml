@@ -1,0 +1,29 @@
+description: >-
+  Уведомление о запросе отмены заказа (notificationType =
+  ORDER_CANCELLATION_REQUEST).
+type: object
+required:
+  - notificationType
+  - orderId
+  - campaignId
+  - requestedAt
+properties:
+  notificationType:
+    $ref: ./NotificationType.yaml
+  orderId:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64
+  campaignId:
+    description: Идентификатор кампании.
+    type: integer
+    format: int64
+  requestedAt:
+    description: >
+      Дата и время запроса на отмену заказа.
+
+
+      Формат даты: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:00:00.213Z`.
+    type: string
+    format: date-time

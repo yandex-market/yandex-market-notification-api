@@ -1,0 +1,21 @@
+description: Ответ в случае успешной доставки уведомления.
+type: object
+required:
+  - version
+  - name
+  - time
+properties:
+  version:
+    description: Версия интеграции.
+    type: string
+    minLength: 1
+    maxLength: 100
+  name:
+    description: Название интеграции.
+    type: string
+    minLength: 1
+    maxLength: 100
+  time:
+    description: Дата и время начала обработки уведомления в формате UTC.
+    type: string
+    format: date-time

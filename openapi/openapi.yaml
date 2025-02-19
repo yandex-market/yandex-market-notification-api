@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Партнерский API Маркета (Push-нотификации)
+  description: >
+    Часть партнерского API Маркета, отвечающая за нотификацию внешнего API
+    магазинов о событиях.
+  version: LATEST
+paths:
+  /notification:
+    $ref: paths/notification.yaml
