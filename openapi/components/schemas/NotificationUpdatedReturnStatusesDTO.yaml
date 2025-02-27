@@ -1,0 +1,10 @@
+description: |
+  Информация об обновлении статуса возврата или невыкупа.
+
+  Возвращается только тот статус, который был изменен.
+type: object
+properties:
+  refundStatus:
+    $ref: ./RefundStatusType.yaml
+  shipmentStatus:
+    $ref: ./ReturnShipmentStatusType.yaml

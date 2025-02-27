@@ -1,0 +1,37 @@
+description: >
+  Уведомление о смене статуса возврата или невыкупа (notificationType =
+  ORDER_RETURN_STATUS_UPDATED).
+
+
+  {% note tip "Чтобы получить подробную информацию о возврате или невыкупе" %}
+
+
+  Используйте метод [GET
+  campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/orders/getReturn.md).
+
+
+  {% endnote %}
+type: object
+required:
+  - notificationType
+  - orderId
+  - returnId
+  - campaignId
+  - statuses
+properties:
+  notificationType:
+    $ref: ./NotificationType.yaml
+  orderId:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64
+  returnId:
+    description: Идентификатор возврата или невыкупа.
+    type: integer
+    format: int64
+  campaignId:
+    description: Идентификатор кампании.
+    type: integer
+    format: int64
+  statuses:
+    $ref: ./NotificationUpdatedReturnStatusesDTO.yaml

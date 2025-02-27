@@ -7,6 +7,7 @@ description: |
   * `ORDER_CANCELLATION_REQUEST` — запрос на отмену заказа.
   * `ORDER_STATUS_UPDATED` — статус заказа изменен.
   * `ORDER_RETURN_CREATED` — создан новый возврат или невыкуп.
+  * `ORDER_RETURN_STATUS_UPDATED` — статус возврата или невыкупа изменен.
 type: string
 enum:
   - PING
@@ -15,3 +16,4 @@ enum:
   - ORDER_STATUS_UPDATED
   - ORDER_RETURN_CREATED
   - ORDER_CANCELLATION_REQUEST
+  - ORDER_RETURN_STATUS_UPDATED
