@@ -1,10 +1,10 @@
-# Yandex Market Notification API Integration Guide for Sellers
+# Yandex Market Notification service API Integration Guide for Sellers
 
-This guide explains how to use the Yandex Market Notification API specification for sellers, designed to automate and streamline interactions with the marketplace.
+This guide explains how to use the Yandex Market Notification service API specification for sellers, designed to automate and streamline interactions with the marketplace.
 
-## Generating a Notification API Client
+## Generating a Notification service API Client
 
-The OpenAPI specification enables you to generate server libraries in various programming languages and frameworks supported by the OpenAPI generator,  simplifying your integration with Yandex Market's Notification API.
+The OpenAPI specification enables you to generate server libraries in various programming languages and frameworks supported by the OpenAPI generator,  simplifying your integration with Yandex Market's Notification service API.
 
 ### Obtaining the Specification via Git
 
