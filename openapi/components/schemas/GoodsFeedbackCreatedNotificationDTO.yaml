@@ -1,0 +1,22 @@
+description: >
+  Уведомление о создании нового отзыва на товар (notificationType =
+  GOODS_FEEDBACK_CREATED).
+type: object
+required:
+  - notificationType
+  - feedbackId
+  - createdAt
+properties:
+  notificationType:
+    $ref: ./NotificationType.yaml
+  feedbackId:
+    $ref: ./GoodsFeedbackId.yaml
+  createdAt:
+    description: >
+      Дата и время создания отзыва.
+
+
+      Формат даты: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:00:00.213Z`.
+    type: string
+    format: date-time

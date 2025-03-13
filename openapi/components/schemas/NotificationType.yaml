@@ -1,13 +1,25 @@
-description: |
+description: >
   Тип уведомления:
 
+
   * `PING` — проверочное уведомление.
+
   * `ORDER_CREATED` — создан новый заказ.
+
   * `ORDER_CANCELLED` — заказ отменен.
+
   * `ORDER_CANCELLATION_REQUEST` — запрос на отмену заказа.
+
   * `ORDER_STATUS_UPDATED` — статус заказа изменен.
+
   * `ORDER_RETURN_CREATED` — создан новый возврат или невыкуп.
+
   * `ORDER_RETURN_STATUS_UPDATED` — статус возврата или невыкупа изменен.
+
+  * `GOODS_FEEDBACK_CREATED` — создан новый отзыв на товар.
+
+  * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву на
+  товар.
 type: string
 enum:
   - PING
@@ -17,3 +29,5 @@ enum:
   - ORDER_RETURN_CREATED
   - ORDER_CANCELLATION_REQUEST
   - ORDER_RETURN_STATUS_UPDATED
+  - GOODS_FEEDBACK_CREATED
+  - GOODS_FEEDBACK_COMMENT_CREATED

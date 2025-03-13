@@ -13,6 +13,8 @@ oneOf:
   - $ref: ./OrderCancellationRequestNotificationDTO.yaml
   - $ref: ./OrderReturnCreatedNotificationDTO.yaml
   - $ref: ./OrderReturnStatusUpdatedNotificationDTO.yaml
+  - $ref: ./GoodsFeedbackCreatedNotificationDTO.yaml
+  - $ref: ./GoodsFeedbackCommentCreatedNotificationDTO.yaml
 discriminator:
   propertyName: notificationType
   mapping:
@@ -23,3 +25,5 @@ discriminator:
     ORDER_STATUS_UPDATED: ./OrderStatusUpdatedNotificationDTO.yaml
     ORDER_RETURN_CREATED: ./OrderReturnCreatedNotificationDTO.yaml
     ORDER_RETURN_STATUS_UPDATED: ./OrderReturnStatusUpdatedNotificationDTO.yaml
+    GOODS_FEEDBACK_CREATED: ./GoodsFeedbackCreatedNotificationDTO.yaml
+    GOODS_FEEDBACK_COMMENT_CREATED: ./GoodsFeedbackCommentCreatedNotificationDTO.yaml
