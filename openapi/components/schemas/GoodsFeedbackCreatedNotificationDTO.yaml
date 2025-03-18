@@ -5,12 +5,17 @@ type: object
 required:
   - notificationType
   - feedbackId
+  - businessId
   - createdAt
 properties:
   notificationType:
     $ref: ./NotificationType.yaml
   feedbackId:
     $ref: ./GoodsFeedbackId.yaml
+  businessId:
+    description: Идентификатор бизнеса.
+    type: integer
+    format: int64
   createdAt:
     description: >
       Дата и время создания отзыва.
