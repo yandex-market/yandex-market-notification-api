@@ -15,6 +15,9 @@ oneOf:
   - $ref: ./OrderReturnStatusUpdatedNotificationDTO.yaml
   - $ref: ./GoodsFeedbackCreatedNotificationDTO.yaml
   - $ref: ./GoodsFeedbackCommentCreatedNotificationDTO.yaml
+  - $ref: ./ChatCreatedNotificationDTO.yaml
+  - $ref: ./ChatMessageSentNotificationDTO.yaml
+  - $ref: ./ChatArbitrageStartedNotificationDTO.yaml
 discriminator:
   propertyName: notificationType
   mapping:
@@ -27,3 +30,6 @@ discriminator:
     ORDER_RETURN_STATUS_UPDATED: ./OrderReturnStatusUpdatedNotificationDTO.yaml
     GOODS_FEEDBACK_CREATED: ./GoodsFeedbackCreatedNotificationDTO.yaml
     GOODS_FEEDBACK_COMMENT_CREATED: ./GoodsFeedbackCommentCreatedNotificationDTO.yaml
+    CHAT_CREATED: ./ChatCreatedNotificationDTO.yaml
+    CHAT_MESSAGE_SENT: ./ChatMessageSentNotificationDTO.yaml
+    CHAT_ARBITRAGE_STARTED: ./ChatArbitrageStartedNotificationDTO.yaml

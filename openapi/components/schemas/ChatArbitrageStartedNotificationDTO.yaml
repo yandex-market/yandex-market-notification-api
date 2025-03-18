@@ -1,0 +1,28 @@
+description: |
+  Уведомление о начале арбитража (notificationType = CHAT_ARBITRAGE_STARTED).
+type: object
+required:
+  - notificationType
+  - chatId
+  - businessId
+  - startedAt
+properties:
+  notificationType:
+    $ref: ./NotificationType.yaml
+  chatId:
+    description: Идентификатор чата.
+    type: integer
+    format: int64
+  businessId:
+    description: Идентификатор бизнеса.
+    type: integer
+    format: int64
+  startedAt:
+    description: >
+      Дата и время начала арбитража.
+
+
+      Формат даты: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:00:00.213Z`.
+    type: string
+    format: date-time

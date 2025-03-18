@@ -21,6 +21,12 @@ description: >
 
   * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву на
   товар.
+
+  * `CHAT_CREATED` — создан новый чат.
+
+  * `CHAT_MESSAGE_SENT` — добавлено новое сообщение в чат.
+
+  * `CHAT_ARBITRAGE_STARTED` — по обращению партнера начат арбитраж.
 type: string
 enum:
   - PING
@@ -32,3 +38,6 @@ enum:
   - ORDER_RETURN_STATUS_UPDATED
   - GOODS_FEEDBACK_CREATED
   - GOODS_FEEDBACK_COMMENT_CREATED
+  - CHAT_CREATED
+  - CHAT_MESSAGE_SENT
+  - CHAT_ARBITRAGE_STARTED

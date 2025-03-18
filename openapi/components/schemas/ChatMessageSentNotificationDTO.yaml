@@ -1,0 +1,32 @@
+description: |
+  Уведомление о новом сообщении в чате (notificationType = CHAT_MESSAGE_SENT).
+type: object
+required:
+  - notificationType
+  - chatId
+  - messageId
+  - businessId
+  - sentAt
+properties:
+  notificationType:
+    $ref: ./NotificationType.yaml
+  chatId:
+    description: Идентификатор чата.
+    type: integer
+    format: int64
+  messageId:
+    description: Идентификатор сообщения.
+    type: string
+  businessId:
+    description: Идентификатор бизнеса.
+    type: integer
+    format: int64
+  sentAt:
+    description: >
+      Дата и время отправки сообщения.
+
+
+      Формат даты: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:00:00.213Z`.
+    type: string
+    format: date-time
