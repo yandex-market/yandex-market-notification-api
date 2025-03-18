@@ -1,5 +1,8 @@
 description: >
-  Уведомление о создании нового заказа (notificationType = ORDER_CREATED).
+  Уведомление о создании нового заказа.
+
+
+  `notificationType` = `ORDER_CREATED`
 
 
   {% note tip "Чтобы получить подробную информацию о заказе" %}
@@ -25,7 +28,7 @@ properties:
     type: integer
     format: int64
   campaignId:
-    description: Идентификатор кампании.
+    description: Идентификатор магазина.
     type: integer
     format: int64
   items:

@@ -1,4 +1,4 @@
-description: Информация о товаре в возврате или невыкупе.
+description: Информация о товаре в невыкупе или возврате.
 type: object
 required:
   - offerId

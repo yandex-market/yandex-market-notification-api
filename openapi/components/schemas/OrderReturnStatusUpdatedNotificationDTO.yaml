@@ -1,9 +1,11 @@
 description: >
-  Уведомление о смене статуса возврата или невыкупа (notificationType =
-  ORDER_RETURN_STATUS_UPDATED).
+  Уведомление о смене статуса невыкупа или возврата.
 
 
-  {% note tip "Чтобы получить подробную информацию о возврате или невыкупе" %}
+  `notificationType` = `ORDER_RETURN_STATUS_UPDATED`
+
+
+  {% note tip "Чтобы получить подробную информацию о невыкупе или возврате" %}
 
 
   Используйте метод [GET
@@ -26,11 +28,11 @@ properties:
     type: integer
     format: int64
   returnId:
-    description: Идентификатор возврата или невыкупа.
+    description: Идентификатор невыкупа или возврата.
     type: integer
     format: int64
   campaignId:
-    description: Идентификатор кампании.
+    description: Идентификатор магазина.
     type: integer
     format: int64
   statuses:

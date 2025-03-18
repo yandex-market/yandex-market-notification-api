@@ -1,6 +1,18 @@
-description: >-
-  Уведомление о запросе отмены заказа (notificationType =
-  ORDER_CANCELLATION_REQUEST).
+description: >
+  Уведомление о создании заявки на отмену заказа (для DBS-магазинов).
+
+
+  `notificationType` = `ORDER_CANCELLATION_REQUEST`
+
+
+  {% note tip "Чтобы подтвердить или отклонить заявку" %}
+
+
+  Используйте метод [PUT
+  campaigns/{campaignId}/orders/{orderId}/cancellation/accept](../../reference/orders/acceptOrderCancellation.md).
+
+
+  {% endnote %}
 type: object
 required:
   - notificationType
@@ -15,12 +27,12 @@ properties:
     type: integer
     format: int64
   campaignId:
-    description: Идентификатор кампании.
+    description: Идентификатор магазина.
     type: integer
     format: int64
   requestedAt:
     description: >
-      Дата и время запроса на отмену заказа.
+      Дата и время создания заявки на отмену заказа.
 
 
       Формат даты: ISO 8601 со смещением относительно UTC. Например,

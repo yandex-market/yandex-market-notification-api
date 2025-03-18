@@ -1,6 +1,8 @@
 description: >
-  Уведомление об изменении статуса заказа (notificationType =
-  ORDER_STATUS_UPDATED).
+  Уведомление об изменении статуса заказа.
+
+
+  `notificationType` = `ORDER_STATUS_UPDATED`
 
 
   {% note tip "Чтобы изменить статус заказа" %}
@@ -27,7 +29,7 @@ properties:
     type: integer
     format: int64
   campaignId:
-    description: Идентификатор кампании.
+    description: Идентификатор магазина.
     type: integer
     format: int64
   status:

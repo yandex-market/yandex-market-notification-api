@@ -1,4 +1,7 @@
-description: Проверочное уведомление (notificationType = PING).
+description: |
+  Проверочное уведомление.
+
+  `notificationType` = `PING`
 type: object
 properties:
   notificationType:

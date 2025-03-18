@@ -1,4 +1,7 @@
-description: Уведомление об отмене заказа (notificationType = ORDER_CANCELLED).
+description: |
+  Уведомление об отмене заказа.
+
+  `notificationType` = `ORDER_CANCELLED`
 type: object
 required:
   - notificationType
@@ -14,7 +17,7 @@ properties:
     type: integer
     format: int64
   campaignId:
-    description: Идентификатор кампании.
+    description: Идентификатор магазина.
     type: integer
     format: int64
   items:

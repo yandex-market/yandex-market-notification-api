@@ -8,13 +8,14 @@ description: >
 
   * `ORDER_CANCELLED` — заказ отменен.
 
-  * `ORDER_CANCELLATION_REQUEST` — запрос на отмену заказа.
-
   * `ORDER_STATUS_UPDATED` — статус заказа изменен.
 
-  * `ORDER_RETURN_CREATED` — создан новый возврат или невыкуп.
+  * `ORDER_RETURN_CREATED` — создан новый невыкуп или возврат.
 
-  * `ORDER_RETURN_STATUS_UPDATED` — статус возврата или невыкупа изменен.
+  * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для
+  DBS-магазинов).
+
+  * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 
   * `GOODS_FEEDBACK_CREATED` — создан новый отзыв на товар.
 
