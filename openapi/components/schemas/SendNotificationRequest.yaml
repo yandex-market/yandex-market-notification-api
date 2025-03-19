@@ -18,6 +18,7 @@ oneOf:
   - $ref: ./ChatCreatedNotificationDTO.yaml
   - $ref: ./ChatMessageSentNotificationDTO.yaml
   - $ref: ./ChatArbitrageStartedNotificationDTO.yaml
+  - $ref: ./ChatArbitrageFinishedNotificationDTO.yaml
 discriminator:
   propertyName: notificationType
   mapping:
@@ -33,3 +34,4 @@ discriminator:
     CHAT_CREATED: ./ChatCreatedNotificationDTO.yaml
     CHAT_MESSAGE_SENT: ./ChatMessageSentNotificationDTO.yaml
     CHAT_ARBITRAGE_STARTED: ./ChatArbitrageStartedNotificationDTO.yaml
+    CHAT_ARBITRAGE_FINISHED: ./ChatArbitrageFinishedNotificationDTO.yaml

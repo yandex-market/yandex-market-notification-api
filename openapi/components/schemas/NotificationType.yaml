@@ -27,6 +27,8 @@ description: >
   * `CHAT_MESSAGE_SENT` — добавлено новое сообщение в чат.
 
   * `CHAT_ARBITRAGE_STARTED` — по обращению партнера начат арбитраж.
+
+  * `CHAT_ARBITRAGE_FINISHED` — по обращению партнера завершен арбитраж.
 type: string
 enum:
   - PING
@@ -41,3 +43,4 @@ enum:
   - CHAT_CREATED
   - CHAT_MESSAGE_SENT
   - CHAT_ARBITRAGE_STARTED
+  - CHAT_ARBITRAGE_FINISHED
