@@ -7,6 +7,7 @@ required:
   - feedbackId
   - businessId
   - createdAt
+  - publishedAt
 properties:
   notificationType:
     $ref: ./NotificationType.yaml
@@ -19,6 +20,15 @@ properties:
   createdAt:
     description: >
       Дата и время создания отзыва.
+
+
+      Формат даты: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:00:00.213Z`.
+    type: string
+    format: date-time
+  publishedAt:
+    description: >
+      Дата и время публикации отзыва.
 
 
       Формат даты: ISO 8601 со смещением относительно UTC. Например,
