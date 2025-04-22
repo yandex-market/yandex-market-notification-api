@@ -1,6 +1,7 @@
-description: >
-  Уведомление о завершении арбитража (notificationType =
-  CHAT_ARBITRAGE_FINISHED).
+description: |
+  Уведомление о завершении спора.
+
+  `notificationType` = `CHAT_ARBITRAGE_FINISHED`
 type: object
 required:
   - notificationType
@@ -15,12 +16,12 @@ properties:
     type: integer
     format: int64
   businessId:
-    description: Идентификатор бизнеса.
+    description: Идентификатор кабинета.
     type: integer
     format: int64
   finishedAt:
     description: >
-      Дата и время завершения арбитража.
+      Дата и время завершения спора.
 
 
       Формат даты: ISO 8601 со смещением относительно UTC. Например,

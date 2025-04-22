@@ -1,5 +1,24 @@
-description: |
-  Уведомление о новом сообщении в чате (notificationType = CHAT_MESSAGE_SENT).
+description: >
+  Уведомление о новом сообщении в чате.
+
+
+  `notificationType` = `CHAT_MESSAGE_SENT`
+
+
+  {% note tip "Чтобы получить сообщение от покупателя" %}
+
+
+  Используйте метод [GET
+  businesses/{businessId}/chats/message](../../reference/chats/getChatMessage.md),
+  где укажите идентификаторы:
+
+
+  * чата — `chatId`;
+
+  * сообщения — `messageId`.
+
+
+  {% endnote %}
 type: object
 required:
   - notificationType
@@ -18,7 +37,7 @@ properties:
     description: Идентификатор сообщения.
     type: string
   businessId:
-    description: Идентификатор бизнеса.
+    description: Идентификатор кабинета.
     type: integer
     format: int64
   sentAt:

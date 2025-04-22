@@ -1,5 +1,19 @@
-description: |
-  Уведомление о создании чата (notificationType = CHAT_CREATED).
+description: >
+  Уведомление о создании нового чата с покупателем.
+
+
+  `notificationType` = `CHAT_CREATED`
+
+
+  {% note tip "Чтобы получить чат с покупателем" %}
+
+
+  Используйте метод [GET
+  businesses/{businessId}/chat](../../reference/chats/getChat.md), где укажите
+  идентификатор чата в параметре `chatId`.
+
+
+  {% endnote %}
 type: object
 required:
   - notificationType
@@ -14,7 +28,7 @@ properties:
     type: integer
     format: int64
   businessId:
-    description: Идентификатор бизнеса.
+    description: Идентификатор кабинета.
     type: integer
     format: int64
   createdAt:

@@ -1,6 +1,26 @@
 description: >
-  Уведомление о создании нового отзыва на товар (notificationType =
-  GOODS_FEEDBACK_CREATED).
+  Уведомление о создании нового отзыва о товаре.
+
+
+  `notificationType` = `GOODS_FEEDBACK_CREATED`
+
+
+  Маркет отправляет уведомления об отзывах, только когда они прошли модерацию и
+  опубликованы.
+
+
+  {% note tip "Чтобы получить подробную информацию об отзывах" %}
+
+
+  Используйте метод [POST
+  businesses/{businessId}/goods-feedback](../../reference/goods-feedback/getGoodsFeedbacks.md),
+  где укажите их идентификаторы в параметре `feedbackIds`.
+
+
+  Получить информацию не получится, если покупатель или Маркет удалил отзыв.
+
+
+  {% endnote %}
 type: object
 required:
   - notificationType
@@ -14,12 +34,16 @@ properties:
   feedbackId:
     $ref: ./GoodsFeedbackId.yaml
   businessId:
-    description: Идентификатор бизнеса.
+    description: Идентификатор кабинета.
     type: integer
     format: int64
   createdAt:
     description: >
       Дата и время создания отзыва.
+
+
+      Может отличаться от информации в `publishedAt`, так как некоторое время
+      отзыв проходит модерацию.
 
 
       Формат даты: ISO 8601 со смещением относительно UTC. Например,
@@ -29,6 +53,10 @@ properties:
   publishedAt:
     description: >
       Дата и время публикации отзыва.
+
+
+      Может отличаться от информации в `createdAt`, так как некоторое время
+      отзыв проходит модерацию.
 
 
       Формат даты: ISO 8601 со смещением относительно UTC. Например,

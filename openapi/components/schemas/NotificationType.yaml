@@ -17,18 +17,18 @@ description: >
 
   * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 
-  * `GOODS_FEEDBACK_CREATED` — создан новый отзыв на товар.
+  * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 
-  * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву на
-  товар.
+  * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о
+  товаре.
 
-  * `CHAT_CREATED` — создан новый чат.
+  * `CHAT_CREATED` — создан новый чат с покупателем.
 
-  * `CHAT_MESSAGE_SENT` — добавлено новое сообщение в чат.
+  * `CHAT_MESSAGE_SENT` — добавлено новое сообщение в чате.
 
-  * `CHAT_ARBITRAGE_STARTED` — по обращению партнера начат арбитраж.
+  * `CHAT_ARBITRAGE_STARTED` — по обращению покупателя начался спор.
 
-  * `CHAT_ARBITRAGE_FINISHED` — по обращению партнера завершен арбитраж.
+  * `CHAT_ARBITRAGE_FINISHED` — спор завершен.
 type: string
 enum:
   - PING
