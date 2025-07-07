@@ -19,6 +19,8 @@ description: >
 
   * `ORDER_SHIPMENT_DATE_UPDATED` — дата отгрузки заказа изменена.
 
+  * `ORDER_DELIVERY_DATE_UPDATED` — дата доставки заказа изменена.
+
   * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 
   * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о
@@ -41,6 +43,7 @@ enum:
   - ORDER_CANCELLATION_REQUEST
   - ORDER_RETURN_STATUS_UPDATED
   - ORDER_SHIPMENT_DATE_UPDATED
+  - ORDER_DELIVERY_DATE_UPDATED
   - GOODS_FEEDBACK_CREATED
   - GOODS_FEEDBACK_COMMENT_CREATED
   - CHAT_CREATED

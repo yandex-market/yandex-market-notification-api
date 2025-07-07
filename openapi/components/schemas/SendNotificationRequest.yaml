@@ -31,6 +31,7 @@ discriminator:
     ORDER_RETURN_CREATED: ./OrderReturnCreatedNotificationDTO.yaml
     ORDER_RETURN_STATUS_UPDATED: ./OrderReturnStatusUpdatedNotificationDTO.yaml
     ORDER_SHIPMENT_DATE_UPDATED: ./OrderShipmentDateUpdatedNotificationDTO.yaml
+    ORDER_DELIVERY_DATE_UPDATED: ./OrderDeliveryDateUpdatedNotificationDTO.yaml
     GOODS_FEEDBACK_CREATED: ./GoodsFeedbackCreatedNotificationDTO.yaml
     GOODS_FEEDBACK_COMMENT_CREATED: ./GoodsFeedbackCommentCreatedNotificationDTO.yaml
     CHAT_CREATED: ./ChatCreatedNotificationDTO.yaml
