@@ -16,6 +16,6 @@ properties:
     minLength: 1
     maxLength: 100
   time:
-    description: Дата и время начала обработки уведомления в формате UTC.
+    description: Дата и время начала обработки уведомления в формате :no-translate[UTC].
     type: string
     format: date-time
