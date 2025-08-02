@@ -1,0 +1,59 @@
+description: >
+  Уведомление о изменении заказа.
+
+
+  `notificationType` = `ORDER_UPDATED`
+
+
+  {% note tip "Чтобы получить подробную информацию о заказе" %}
+
+
+  Используйте метод [GET
+  campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
+
+
+  {% endnote %}
+type: object
+required:
+  - notificationType
+  - orderId
+  - campaignId
+  - updateType
+  - updatedAt
+properties:
+  notificationType:
+    $ref: ./NotificationType.yaml
+  orderId:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64
+  campaignId:
+    description: >
+      Идентификатор кампании.
+
+
+      Его можно узнать с помощью запроса [GET
+      campaigns](../../reference/campaigns/getCampaigns.md) или найти в кабинете
+      продавца на Маркете — нажмите на название своего бизнеса и перейдите на
+      страницу:
+
+        * **Модули и :no-translate[API]** → блок **Передача данных Маркету**.
+        * **Лог запросов** → выпадающий список в блоке **Показывать логи**.
+
+      ⚠️ Не передавайте вместо него идентификатор магазина, который указан в
+      кабинете продавца на Маркете рядом с названием магазина и в некоторых
+      отчетах.
+    type: integer
+    format: int64
+  updateType:
+    description: Тип изменения заказа.
+    $ref: ./OrderUpdateType.yaml
+  updatedAt:
+    description: >
+      Дата и время изменения заказа.
+
+
+      Формат даты: :no-translate[ISO 8601] со смещением относительно
+      :no-translate[UTC]. Например, `2017-11-21T00:00:00.213Z`.
+    type: string
+    format: date-time
