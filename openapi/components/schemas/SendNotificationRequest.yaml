@@ -14,8 +14,6 @@ oneOf:
   - $ref: ./OrderReturnCreatedNotificationDTO.yaml
   - $ref: ./OrderReturnStatusUpdatedNotificationDTO.yaml
   - $ref: ./OrderUpdatedNotificationDTO.yaml
-  - $ref: ./OrderShipmentDateUpdatedNotificationDTO.yaml
-  - $ref: ./OrderDeliveryDateUpdatedNotificationDTO.yaml
   - $ref: ./GoodsFeedbackCreatedNotificationDTO.yaml
   - $ref: ./GoodsFeedbackCommentCreatedNotificationDTO.yaml
   - $ref: ./ChatCreatedNotificationDTO.yaml
@@ -32,8 +30,6 @@ discriminator:
     ORDER_STATUS_UPDATED: ./OrderStatusUpdatedNotificationDTO.yaml
     ORDER_RETURN_CREATED: ./OrderReturnCreatedNotificationDTO.yaml
     ORDER_RETURN_STATUS_UPDATED: ./OrderReturnStatusUpdatedNotificationDTO.yaml
-    ORDER_SHIPMENT_DATE_UPDATED: ./OrderShipmentDateUpdatedNotificationDTO.yaml
-    ORDER_DELIVERY_DATE_UPDATED: ./OrderDeliveryDateUpdatedNotificationDTO.yaml
     ORDER_UPDATED: ./OrderUpdatedNotificationDTO.yaml
     GOODS_FEEDBACK_CREATED: ./GoodsFeedbackCreatedNotificationDTO.yaml
     GOODS_FEEDBACK_COMMENT_CREATED: ./GoodsFeedbackCommentCreatedNotificationDTO.yaml
