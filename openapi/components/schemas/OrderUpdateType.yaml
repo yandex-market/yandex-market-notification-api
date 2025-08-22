@@ -1,9 +1,9 @@
 description: |
-  Тип изменения заказа.
+  Тип изменения заказа:
 
   * `SHIPMENT_DATE_UPDATED` — изменение даты отгрузки.
   * `DELIVERY_DATE_UPDATED` — изменение даты доставки.
-  * `UNKNOWN` — неизвестный тип изменения.
+  * `UNKNOWN` — неизвестный тип.
 type: string
 enum:
   - SHIPMENT_DATE_UPDATED
