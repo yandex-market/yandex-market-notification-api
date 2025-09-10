@@ -13,7 +13,7 @@ description: >
 
 
   Используйте метод [POST
-  businesses/{businessId}/goods-feedback](../../reference/goods-feedback/getGoodsFeedbacks.md),
+  v2/businesses/{businessId}/goods-feedback](../../reference/goods-feedback/getGoodsFeedbacks.md),
   где укажите их идентификаторы в параметре `feedbackIds`.
 
 

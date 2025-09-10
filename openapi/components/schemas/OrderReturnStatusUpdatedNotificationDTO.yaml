@@ -9,7 +9,7 @@ description: >
 
 
   Используйте метод [GET
-  campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/orders/getReturn.md).
+  v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/orders/getReturn.md).
 
 
   {% endnote %}
@@ -38,9 +38,9 @@ properties:
 
 
       Его можно узнать с помощью метода [GET
-      campaigns](../../reference/campaigns/getCampaigns.md) или найти в кабинете
-      продавца на Маркете — нажмите на название своего бизнеса и перейдите на
-      страницу:
+      v2/campaigns](../../reference/campaigns/getCampaigns.md) или найти в
+      кабинете продавца на Маркете — нажмите на название своего бизнеса и
+      перейдите на страницу:
 
         * **Модули и :no-translate[API]** → блок **Передача данных Маркету**.
         * **Лог запросов** → выпадающий список в блоке **Показывать логи**.

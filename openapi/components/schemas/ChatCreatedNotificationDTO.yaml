@@ -9,8 +9,8 @@ description: >
 
 
   Используйте метод [GET
-  businesses/{businessId}/chat](../../reference/chats/getChat.md), где укажите
-  идентификатор чата в параметре `chatId`.
+  v2/businesses/{businessId}/chat](../../reference/chats/getChat.md), где
+  укажите идентификатор чата в параметре `chatId`.
 
 
   {% endnote %}
