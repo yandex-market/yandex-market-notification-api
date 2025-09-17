@@ -5,6 +5,9 @@ description: >
   `notificationType` = `CHAT_CREATED`
 
 
+  Приходит для всех типов чатов.
+
+
   {% note tip "Чтобы получить чат с покупателем" %}
 
 

@@ -5,6 +5,9 @@ description: >
   `notificationType` = `CHAT_MESSAGE_SENT`
 
 
+  Приходит для всех типов чатов.
+
+
   {% note tip "Чтобы получить сообщение от покупателя" %}
 
 

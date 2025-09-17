@@ -1,7 +1,12 @@
-description: |
+description: >
   Уведомление о начале спора.
 
+
   `notificationType` = `CHAT_ARBITRAGE_STARTED`
+
+
+  Не приходит для чата с типом `DIRECT`. [Подробнее о таких
+  чатах](https://yandex.ru/support/marketplace/ru/orders/communication/with-users)
 type: object
 required:
   - notificationType

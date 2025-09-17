@@ -1,7 +1,12 @@
-description: |
+description: >
   Уведомление о завершении спора.
 
+
   `notificationType` = `CHAT_ARBITRAGE_FINISHED`
+
+
+  Не приходит для чата с типом `DIRECT`. [Подробнее о таких
+  чатах](https://yandex.ru/support/marketplace/ru/orders/communication/with-users)
 type: object
 required:
   - notificationType
