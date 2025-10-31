@@ -5,6 +5,9 @@ description: >
   `notificationType` = `ORDER_CANCELLATION_REQUEST`
 
 
+  Не отправляется, если заказ доставляет Маркет.
+
+
   {% note tip "Чтобы подтвердить или отклонить заявку" %}
 
 
