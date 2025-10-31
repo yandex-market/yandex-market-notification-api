@@ -5,11 +5,18 @@ description: >
   `notificationType` = `ORDER_CREATED`
 
 
-  {% note tip "Чтобы получить подробную информацию о заказе" %}
+
+  {% note tip "Методы, которые могут быть полезны" %}
 
 
-  Используйте метод [GET
-  v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).
+  [POST
+  v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md)
+  — передача внешнего идентификатора заказа.
+
+
+  [GET
+  v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
+  — получение подробной информации о заказе.
 
 
   {% endnote %}
