@@ -1,26 +1,4 @@
-description: >
-  Уведомление о создании нового отзыва о товаре.
-
-
-  `notificationType` = `GOODS_FEEDBACK_CREATED`
-
-
-  Маркет отправляет уведомления об отзывах, только когда они прошли модерацию и
-  опубликованы.
-
-
-  {% note tip "Чтобы получить подробную информацию об отзывах" %}
-
-
-  Используйте метод [POST
-  v2/businesses/{businessId}/goods-feedback](../../reference/goods-feedback/getGoodsFeedbacks.md),
-  где укажите их идентификаторы в параметре `feedbackIds`.
-
-
-  Получить информацию не получится, если покупатель или Маркет удалил отзыв.
-
-
-  {% endnote %}
+description: "Уведомление о создании нового отзыва о товаре.\n\n`notificationType` = `GOODS_FEEDBACK_CREATED`\n\nМаркет отправляет уведомления об отзывах, только когда они прошли модерацию и опубликованы.\n\n{% note tip \"Чтобы получить подробную информацию об отзывах\" %}\n\nИспользуйте метод [POST\_v2/businesses/{businessId}/goods-feedback](../../reference/goods-feedback/getGoodsFeedbacks.md), где укажите их идентификаторы в параметре `feedbackIds`.\n\nПолучить информацию не получится, если покупатель или Маркет удалил отзыв.\n\n{% endnote %}\n"
 type: object
 required:
   - notificationType

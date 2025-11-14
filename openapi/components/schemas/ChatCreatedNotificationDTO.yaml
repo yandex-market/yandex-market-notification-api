@@ -1,22 +1,4 @@
-description: >
-  Уведомление о создании нового чата с покупателем.
-
-
-  `notificationType` = `CHAT_CREATED`
-
-
-  Приходит для всех типов чатов.
-
-
-  {% note tip "Чтобы получить чат с покупателем" %}
-
-
-  Используйте метод [GET
-  v2/businesses/{businessId}/chat](../../reference/chats/getChat.md), где
-  укажите идентификатор чата в параметре `chatId`.
-
-
-  {% endnote %}
+description: "Уведомление о создании нового чата с покупателем.\n\n`notificationType` = `CHAT_CREATED`\n\nПриходит для всех типов чатов.\n\n{% note tip \"Чтобы получить чат с покупателем\" %}\n\nИспользуйте метод [GET\_v2/businesses/{businessId}/chat](../../reference/chats/getChat.md), где укажите идентификатор чата в параметре `chatId`.\n\n{% endnote %}\n"
 type: object
 required:
   - notificationType

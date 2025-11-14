@@ -1,21 +1,4 @@
-description: >
-  Уведомление о создании заявки на отмену заказа (для DBS-магазинов).
-
-
-  `notificationType` = `ORDER_CANCELLATION_REQUEST`
-
-
-  Не отправляется, если заказ доставляет Маркет.
-
-
-  {% note tip "Чтобы подтвердить или отклонить заявку" %}
-
-
-  Используйте метод [PUT
-  v2/campaigns/{campaignId}/orders/{orderId}/cancellation/accept](../../reference/orders/acceptOrderCancellation.md).
-
-
-  {% endnote %}
+description: "Уведомление о создании заявки на отмену заказа (для DBS-магазинов).\n\n`notificationType` = `ORDER_CANCELLATION_REQUEST`\n\nНе отправляется, если заказ доставляет Маркет.\n\n{% note tip \"Чтобы подтвердить или отклонить заявку\" %}\n\nИспользуйте метод [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/cancellation/accept](../../reference/orders/acceptOrderCancellation.md).\n\n{% endnote %}\n"
 type: object
 required:
   - notificationType
@@ -30,21 +13,7 @@ properties:
     type: integer
     format: int64
   campaignId:
-    description: >
-      Идентификатор кампании.
-
-
-      Его можно узнать с помощью запроса [GET
-      v2/campaigns](../../reference/campaigns/getCampaigns.md) или найти в
-      кабинете продавца на Маркете — нажмите на иконку вашего аккаунта →
-      **Настройки** и в меню слева выберите **API и модули**:
-
-        * блок **Идентификатор кампании**;
-        * вкладка **Лог запросов** → выпадающий список в блоке **Показывать логи**.
-
-      ⚠️ Не передавайте вместо него идентификатор магазина, который указан в
-      кабинете продавца на Маркете рядом с названием магазина и в некоторых
-      отчетах.
+    description: "Идентификатор кампании.\n\nЕго можно узнать с помощью запроса [GET\_v2/campaigns](../../reference/campaigns/getCampaigns.md) или найти в кабинете продавца на Маркете — нажмите на иконку вашего аккаунта → **Настройки** и в меню слева выберите **API и модули**:\n\n  * блок **Идентификатор кампании**;\n  * вкладка **Лог запросов** → выпадающий список в блоке **Показывать логи**.\n\n⚠️ Не передавайте вместо него идентификатор магазина, который указан в кабинете продавца на Маркете рядом с названием магазина и в некоторых отчетах.\n"
     type: integer
     format: int64
   requestedAt:

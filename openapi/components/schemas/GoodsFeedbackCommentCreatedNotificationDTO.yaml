@@ -1,23 +1,4 @@
-description: >
-  Уведомление о создании нового комментария к отзыву.
-
-
-  `notificationType` = `GOODS_FEEDBACK_COMMENT_CREATED`
-
-
-  {% note tip "Чтобы получить подробную информацию о комментариях к отзыву" %}
-
-
-  Используйте метод [POST
-  v2/businesses/{businessId}/goods-feedback/comments](../../reference/goods-feedback/getGoodsFeedbackComments.md),
-  где укажите их идентификаторы в параметре `commentIds`.
-
-
-  Получить информацию не получится, если пользователь или Маркет удалил
-  комментарий или отзыв, к которому он добавлен.
-
-
-  {% endnote %}
+description: "Уведомление о создании нового комментария к отзыву.\n\n`notificationType` = `GOODS_FEEDBACK_COMMENT_CREATED`\n\n{% note tip \"Чтобы получить подробную информацию о комментариях к отзыву\" %}\n\nИспользуйте метод [POST\_v2/businesses/{businessId}/goods-feedback/comments](../../reference/goods-feedback/getGoodsFeedbackComments.md), где укажите их идентификаторы в параметре `commentIds`.\n\nПолучить информацию не получится, если пользователь или Маркет удалил комментарий или отзыв, к которому он добавлен.\n\n{% endnote %}\n"
 type: object
 required:
   - notificationType

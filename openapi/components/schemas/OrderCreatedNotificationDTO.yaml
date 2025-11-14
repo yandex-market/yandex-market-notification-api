@@ -1,25 +1,4 @@
-description: >
-  Уведомление о создании нового заказа.
-
-
-  `notificationType` = `ORDER_CREATED`
-
-
-
-  {% note tip "Методы, которые могут быть полезны" %}
-
-
-  [POST
-  v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md)
-  — передача внешнего идентификатора заказа.
-
-
-  [GET
-  v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md)
-  — получение подробной информации о заказе.
-
-
-  {% endnote %}
+description: "Уведомление о создании нового заказа.\n\n`notificationType` = `ORDER_CREATED`\n\n\n{% note tip \"Методы, которые могут быть полезны\" %}\n\n[POST\_v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md) — передача внешнего идентификатора заказа.\n\n[GET\_v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md) — получение подробной информации о заказе.\n\n{% endnote %}\n"
 type: object
 required:
   - notificationType
@@ -35,21 +14,7 @@ properties:
     type: integer
     format: int64
   campaignId:
-    description: >
-      Идентификатор кампании.
-
-
-      Его можно узнать с помощью запроса [GET
-      v2/campaigns](../../reference/campaigns/getCampaigns.md) или найти в
-      кабинете продавца на Маркете — нажмите на иконку вашего аккаунта →
-      **Настройки** и в меню слева выберите **API и модули**:
-
-        * блок **Идентификатор кампании**;
-        * вкладка **Лог запросов** → выпадающий список в блоке **Показывать логи**.
-
-      ⚠️ Не передавайте вместо него идентификатор магазина, который указан в
-      кабинете продавца на Маркете рядом с названием магазина и в некоторых
-      отчетах.
+    description: "Идентификатор кампании.\n\nЕго можно узнать с помощью запроса [GET\_v2/campaigns](../../reference/campaigns/getCampaigns.md) или найти в кабинете продавца на Маркете — нажмите на иконку вашего аккаунта → **Настройки** и в меню слева выберите **API и модули**:\n\n  * блок **Идентификатор кампании**;\n  * вкладка **Лог запросов** → выпадающий список в блоке **Показывать логи**.\n\n⚠️ Не передавайте вместо него идентификатор магазина, который указан в кабинете продавца на Маркете рядом с названием магазина и в некоторых отчетах.\n"
     type: integer
     format: int64
   items:

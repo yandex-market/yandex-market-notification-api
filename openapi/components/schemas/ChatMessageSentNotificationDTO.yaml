@@ -1,27 +1,4 @@
-description: >
-  Уведомление о новом сообщении в чате.
-
-
-  `notificationType` = `CHAT_MESSAGE_SENT`
-
-
-  Приходит для всех типов чатов.
-
-
-  {% note tip "Чтобы получить сообщение от покупателя" %}
-
-
-  Используйте метод [GET
-  v2/businesses/{businessId}/chats/message](../../reference/chats/getChatMessage.md),
-  где укажите идентификаторы:
-
-
-  * чата — `chatId`;
-
-  * сообщения — `messageId`.
-
-
-  {% endnote %}
+description: "Уведомление о новом сообщении в чате.\n\n`notificationType` = `CHAT_MESSAGE_SENT`\n\nПриходит для всех типов чатов.\n\n{% note tip \"Чтобы получить сообщение от покупателя\" %}\n\nИспользуйте метод [GET\_v2/businesses/{businessId}/chats/message](../../reference/chats/getChatMessage.md), где укажите идентификаторы:\n\n* чата — `chatId`;\n* сообщения — `messageId`.\n\n{% endnote %}\n"
 type: object
 required:
   - notificationType
