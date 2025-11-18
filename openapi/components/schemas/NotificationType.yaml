@@ -31,6 +31,12 @@ description: >
   * `CHAT_ARBITRAGE_STARTED` — по обращению покупателя начался спор.
 
   * `CHAT_ARBITRAGE_FINISHED` — спор завершен.
+
+  * `QUESTION_CREATED` — создан новый вопрос.
+
+  * `QUESTION_ANSWER_CREATED` — создан новый ответ на вопрос.
+
+  * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 type: string
 enum:
   - PING
@@ -47,3 +53,6 @@ enum:
   - CHAT_MESSAGE_SENT
   - CHAT_ARBITRAGE_STARTED
   - CHAT_ARBITRAGE_FINISHED
+  - QUESTION_CREATED
+  - QUESTION_ANSWER_CREATED
+  - QUESTION_COMMENT_CREATED

@@ -20,6 +20,9 @@ oneOf:
   - $ref: ./ChatMessageSentNotificationDTO.yaml
   - $ref: ./ChatArbitrageStartedNotificationDTO.yaml
   - $ref: ./ChatArbitrageFinishedNotificationDTO.yaml
+  - $ref: ./QuestionCreatedNotificationDTO.yaml
+  - $ref: ./QuestionAnswerCreatedNotificationDTO.yaml
+  - $ref: ./QuestionCommentCreatedNotificationDTO.yaml
 discriminator:
   propertyName: notificationType
   mapping:
@@ -37,3 +40,6 @@ discriminator:
     CHAT_MESSAGE_SENT: ./ChatMessageSentNotificationDTO.yaml
     CHAT_ARBITRAGE_STARTED: ./ChatArbitrageStartedNotificationDTO.yaml
     CHAT_ARBITRAGE_FINISHED: ./ChatArbitrageFinishedNotificationDTO.yaml
+    QUESTION_CREATED: ./QuestionCreatedNotificationDTO.yaml
+    QUESTION_ANSWER_CREATED: ./QuestionAnswerCreatedNotificationDTO.yaml
+    QUESTION_COMMENT_CREATED: ./QuestionCommentCreatedNotificationDTO.yaml
