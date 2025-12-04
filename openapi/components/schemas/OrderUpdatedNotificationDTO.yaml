@@ -14,9 +14,8 @@ properties:
     type: integer
     format: int64
   campaignId:
-    allOf:
-      - $ref: ./CampaignId.yaml
     description: Идентификатор кампании.
+    $ref: ./CampaignId.yaml
   updateType:
     description: Тип изменения заказа.
     $ref: ./OrderUpdateType.yaml
