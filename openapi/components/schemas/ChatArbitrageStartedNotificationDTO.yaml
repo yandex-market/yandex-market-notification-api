@@ -21,9 +21,7 @@ properties:
     type: integer
     format: int64
   businessId:
-    description: Идентификатор кабинета.
-    type: integer
-    format: int64
+    $ref: ./BusinessId.yaml
   startedAt:
     description: >
       Дата и время начала спора.

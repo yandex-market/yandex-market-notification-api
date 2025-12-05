@@ -12,9 +12,7 @@ properties:
   feedbackId:
     $ref: ./GoodsFeedbackId.yaml
   businessId:
-    description: Идентификатор кабинета.
-    type: integer
-    format: int64
+    $ref: ./BusinessId.yaml
   createdAt:
     description: >
       Дата и время создания отзыва.

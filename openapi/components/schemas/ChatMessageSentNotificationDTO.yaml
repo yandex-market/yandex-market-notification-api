@@ -17,9 +17,7 @@ properties:
     description: Идентификатор сообщения.
     type: string
   businessId:
-    description: Идентификатор кабинета.
-    type: integer
-    format: int64
+    $ref: ./BusinessId.yaml
   sentAt:
     description: >
       Дата и время отправки сообщения.
