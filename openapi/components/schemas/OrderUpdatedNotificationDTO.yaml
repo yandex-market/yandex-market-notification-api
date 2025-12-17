@@ -1,4 +1,4 @@
-description: "Уведомление об изменении заказа.\n\n`notificationType` = `ORDER_UPDATED`\n\n{% note tip \"Чтобы получить подробную информацию о заказе\" %}\n\nИспользуйте метод [GET\_v2/campaigns/{campaignId}/orders/{orderId}](../../reference/orders/getOrder.md).\n\n{% endnote %}\n"
+description: "Уведомление об изменении заказа.\n\n`notificationType` = `ORDER_UPDATED`\n\n{% note tip \"Чтобы получить подробную информацию о заказе\" %}\n\nИспользуйте метод [POST\_v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md) с фильтром `orderIds`.\n\n{% endnote %}\n"
 type: object
 required:
   - notificationType
