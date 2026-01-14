@@ -25,10 +25,10 @@
 **Для Scoop (Windows)**
 `scoop install openapi-generator-cli`
 
-### Генерация клиента
+### Генерация сервера (контракты/модели)
 
 **Для npm (любая ОС)**
-`npx @openapitools/openapi-generator-cli generate -i <path to openapi.yaml> -g <lang> -o <output path>`
+`npx @openapitools/openapi-generator-cli generate -i <path to openapi.yaml> -g <generator> -o <output path>`
 
 **Для остальных пакетных менеджеров**
 `openapi-generator generate -i <path to openapi.yaml> -g <generator> -o <output path> `

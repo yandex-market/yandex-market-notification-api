@@ -4,13 +4,13 @@ This guide explains how to use the Yandex Market Notification service API specif
 
 ## Generating a Notification service API Client
 
-The OpenAPI specification enables you to generate server libraries in various programming languages and frameworks supported by the OpenAPI generator,  simplifying your integration with Yandex Market's Notification service API.
+The specification helps generate server files in any language or framework supported by the OpenAPI generator. This can significantly simplify integration with Yandex Market via the Notification service API.
 
 ### Obtaining the Specification via Git
 
 Choose one of these two methods:
-1. Clone the repository by executing the following command: `git clone https://github.com/yandex-market/yandex-market-partner-api.git`.
-2. Download the archive from the repository using the GitHub web interface: click the green`Code` button and select `Download ZIP` rom the dropdown menu.
+1. Clone the repository by executing the following command: `git clone https://github.com/yandex-market/yandex-market-notification-api.git`.
+2. Download the archive from the repository using the GitHub web interface: click the green `Code` button and select `Download ZIP` from the dropdown menu.
 
 ### Installing the OpenAPI Generator via Package Managers
 
@@ -25,10 +25,10 @@ Refer to the generator documentation: <https://openapi-generator.tech/docs/insta
 **Using Scoop (Windows)**
 `scoop install openapi-generator-cli`
 
-### Generating the Client
+### Generating the Server (contracts/models)
 
 **Using npm (any OS)**
-`npx @openapitools/openapi-generator-cli generate -i <path to openapi.yaml> -g <lang> -o <output path>`
+`npx @openapitools/openapi-generator-cli generate -i <path to openapi.yaml> -g <generator> -o <output path>`
 
 **Using other package managers**
 `openapi-generator generate -i <path to openapi.yaml> -g <generator> -o <output path> `
@@ -36,7 +36,7 @@ Refer to the generator documentation: <https://openapi-generator.tech/docs/insta
 Explanation of placeholders:
 
 * `<generator>` means the generator parameter for the chosen language or framework.
-* `<output path>` means the directory where the generated client code will be saved.
+* `<output path>` means the directory where the generated server code will be saved.
 * `<path to openapi.yaml>` means the path to the openapi.yaml file of this specification.
 
 Examples of available generators include:
