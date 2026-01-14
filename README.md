@@ -48,4 +48,3 @@
 * nodejs-express-server
 
 Полный список генераторов доступен по ссылке: <https://openapi-generator.tech/docs/generators>
-
