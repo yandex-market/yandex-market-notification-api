@@ -1,4 +1,4 @@
-description: "Уведомление о создании заявки на отмену заказа (для DBS-магазинов).\n\n`notificationType` = `ORDER_CANCELLATION_REQUEST`\n\nНе отправляется, если заказ доставляет Маркет.\n\n{% note tip \"Чтобы подтвердить или отклонить заявку\" %}\n\nИспользуйте метод [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/cancellation/accept](../../reference/orders/acceptOrderCancellation.md).\n\n{% endnote %}\n"
+description: "Уведомление о создании заявки на отмену заказа (для DBS-магазинов).\n\n`notificationType` = `ORDER_CANCELLATION_REQUEST`\n\nНе отправляется, если заказ доставляется в ПВЗ Маркета.\n\n{% note tip \"Чтобы подтвердить или отклонить заявку\" %}\n\nИспользуйте метод [PUT\_v2/campaigns/{campaignId}/orders/{orderId}/cancellation/accept](../../reference/orders/acceptOrderCancellation.md).\n\n{% endnote %}\n"
 type: object
 required:
   - notificationType
