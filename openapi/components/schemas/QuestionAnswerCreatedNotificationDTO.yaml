@@ -1,7 +1,4 @@
-description: |
-  Уведомление о создании нового ответа на вопрос.
-
-  `notificationType` = `QUESTION_ANSWER_CREATED`
+description: "Уведомление о создании нового ответа на вопрос.\n\n`notificationType` = `QUESTION_ANSWER_CREATED`\n\n{% note tip \"Чтобы получить подробную информацию об ответе на вопрос\" %}\n\nИспользуйте метод [POST\_v1/businesses/{businessId}/goods-questions/answers](../../reference/goods-questions/getGoodsQuestionAnswers.md), где укажите его идентификатор в параметре `answerIds`.\n\n{% endnote %}\n"
 type: object
 required:
   - notificationType

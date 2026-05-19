@@ -1,7 +1,4 @@
-description: |
-  Уведомление о создании нового комментария к ответу на вопрос.
-
-  `notificationType` = `QUESTION_COMMENT_CREATED`
+description: "Уведомление о создании нового комментария к ответу на вопрос.\n\n`notificationType` = `QUESTION_COMMENT_CREATED`\n\n{% note tip \"Чтобы получить подробную информацию о комментарии к ответу на вопрос\" %}\n\nИспользуйте метод [POST\_v1/businesses/{businessId}/goods-questions/answers](../../reference/goods-questions/getGoodsQuestionAnswers.md), где укажите идентификатор ответа в параметре `answerIds`.\n\n{% endnote %}\n"
 type: object
 required:
   - notificationType
