@@ -1,4 +1,4 @@
-description: "Уведомление о создании нового невыкупа или возврата.\n\n`notificationType` = `ORDER_RETURN_CREATED`\n\n{% note tip \"Чтобы получить подробную информацию о невыкупе или возврате\" %}\n\nИспользуйте метод [GET\_v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/orders/getReturn.md).\n\n{% endnote %}\n"
+description: "Уведомление о создании нового невыкупа или возврата.\n\n`notificationType` = `ORDER_RETURN_CREATED`\n\n{% note tip \"Чтобы получить подробную информацию о невыкупе или возврате\" %}\n\nИспользуйте метод [GET\_v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/returns/getReturn.md).\n\n{% endnote %}\n"
 type: object
 required:
   - notificationType
