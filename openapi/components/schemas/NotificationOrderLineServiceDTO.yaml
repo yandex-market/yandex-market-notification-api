@@ -1,0 +1,10 @@
+description: Информация об услуге в заказе.
+type: object
+required:
+  - itemId
+  - serviceArticle
+properties:
+  itemId:
+    $ref: ./ItemId.yaml
+  serviceArticle:
+    $ref: ./BusinessOrderLineServiceArticle.yaml

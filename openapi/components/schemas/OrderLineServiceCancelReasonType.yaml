@@ -1,0 +1,13 @@
+description: |
+  Причина отмены услуги:
+
+  * `USER_REQUESTED` — покупатель попросил отменить услугу.
+  * `SHOP_UNABLE_TO_RENDER` — магазин не может оказать услугу.
+  * `USER_UNREACHABLE` — не удалось связаться с покупателем.
+  * `UNKNOWN` — неизвестная причина.
+type: string
+enum:
+  - USER_REQUESTED
+  - SHOP_UNABLE_TO_RENDER
+  - USER_UNREACHABLE
+  - UNKNOWN

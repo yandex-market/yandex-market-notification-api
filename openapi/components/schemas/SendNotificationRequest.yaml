@@ -23,6 +23,7 @@ oneOf:
   - $ref: ./QuestionCreatedNotificationDTO.yaml
   - $ref: ./QuestionAnswerCreatedNotificationDTO.yaml
   - $ref: ./QuestionCommentCreatedNotificationDTO.yaml
+  - $ref: ./OrderLineServiceStatusUpdatedNotificationDTO.yaml
 discriminator:
   propertyName: notificationType
   mapping:
@@ -43,3 +44,4 @@ discriminator:
     QUESTION_CREATED: ./QuestionCreatedNotificationDTO.yaml
     QUESTION_ANSWER_CREATED: ./QuestionAnswerCreatedNotificationDTO.yaml
     QUESTION_COMMENT_CREATED: ./QuestionCommentCreatedNotificationDTO.yaml
+    ORDER_LINE_SERVICE_STATUS_UPDATED: ./OrderLineServiceStatusUpdatedNotificationDTO.yaml

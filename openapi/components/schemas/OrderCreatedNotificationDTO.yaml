@@ -5,6 +5,7 @@ required:
   - orderId
   - campaignId
   - items
+  - orderLineServices
   - createdAt
 properties:
   notificationType:
@@ -29,3 +30,8 @@ properties:
       `2017-11-21T00:00:00.213Z`.
     type: string
     format: date-time
+  orderLineServices:
+    description: Список услуг в заказе.
+    type: array
+    items:
+      $ref: ./NotificationOrderLineServiceDTO.yaml

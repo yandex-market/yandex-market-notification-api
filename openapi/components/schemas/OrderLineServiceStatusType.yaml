@@ -1,0 +1,11 @@
+description: |
+  Статус оказания услуги:
+
+  * `CREATED` — услуга создана, но ещё не оказана.
+  * `PROVIDED` — услуга оказана.
+  * `CANCELLED` — услуга отменена.
+type: string
+enum:
+  - CREATED
+  - PROVIDED
+  - CANCELLED

@@ -1,0 +1,43 @@
+description: |
+  Уведомление об изменении статуса услуги в заказе.
+
+  `notificationType` = `ORDER_LINE_SERVICE_STATUS_UPDATED`
+type: object
+required:
+  - notificationType
+  - orderId
+  - campaignId
+  - itemId
+  - serviceArticle
+  - statuses
+  - updatedAt
+properties:
+  notificationType:
+    $ref: ./NotificationType.yaml
+  orderId:
+    description: Идентификатор заказа.
+    type: integer
+    format: int64
+  campaignId:
+    $ref: ./CampaignId.yaml
+  itemId:
+    $ref: ./ItemId.yaml
+  serviceArticle:
+    $ref: ./BusinessOrderLineServiceArticle.yaml
+  statuses:
+    description: Разбивка единиц услуги по статусам после изменения.
+    type: array
+    minItems: 1
+    items:
+      $ref: ./NotificationOrderLineServiceStatusDTO.yaml
+  updatedAt:
+    description: >
+      Дата и время последнего изменения статуса услуги.
+
+
+      Формат даты: ISO 8601 со смещением относительно UTC. Например,
+      `2017-11-21T00:00:00.213Z`.
+    type: string
+    format: date-time
+  cancelReason:
+    $ref: ./OrderLineServiceCancelReasonType.yaml

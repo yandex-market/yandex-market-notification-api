@@ -19,6 +19,8 @@ description: >
 
   * `ORDER_UPDATED` — заказ изменен.
 
+  * `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
+
   * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 
   * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о
@@ -47,6 +49,7 @@ enum:
   - ORDER_CANCELLATION_REQUEST
   - ORDER_RETURN_STATUS_UPDATED
   - ORDER_UPDATED
+  - ORDER_LINE_SERVICE_STATUS_UPDATED
   - GOODS_FEEDBACK_CREATED
   - GOODS_FEEDBACK_COMMENT_CREATED
   - CHAT_CREATED
