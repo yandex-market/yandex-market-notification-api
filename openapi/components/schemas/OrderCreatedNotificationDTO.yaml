@@ -5,7 +5,6 @@ required:
   - orderId
   - campaignId
   - items
-  - orderLineServices
   - createdAt
 properties:
   notificationType:
@@ -33,5 +32,7 @@ properties:
   orderLineServices:
     description: Список услуг в заказе.
     type: array
+    nullable: true
+    minItems: 1
     items:
       $ref: ./NotificationOrderLineServiceDTO.yaml
